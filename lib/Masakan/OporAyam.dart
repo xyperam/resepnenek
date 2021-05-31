@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-class Rendang extends StatelessWidget {
+class Opor extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,13 +12,13 @@ class Rendang extends StatelessWidget {
               Container(
                   height: MediaQuery.of(context).size.height - 20,
                   width: MediaQuery.of(context).size.width,
-                  color: HexColor('#ff5252')),
+                  color: Color(0xFFE8ECAE)),
               Positioned(
                   child: Column(
                 children: [
                   Container(
                     margin: EdgeInsets.fromLTRB(0, 30, 0, 5),
-                    child: Text('Rendang',
+                    child: Text('Opor Ayam',
                         style: TextStyle(
                             fontFamily: 'varela',
                             fontSize: 40.0,
@@ -31,7 +31,7 @@ class Rendang extends StatelessWidget {
                     height: 300,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/img/rendang.png'),
+                            image: AssetImage('assets/img/opor.png'),
                             fit: BoxFit.fill)),
                   ),
                 ],
