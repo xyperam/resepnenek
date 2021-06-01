@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:resepnenek/About.dart';
+import 'package:resepnenek/LoginPage.dart';
+import 'package:resepnenek/Profil.dart';
 
 class Sidebar extends StatelessWidget {
   @override
@@ -26,6 +29,15 @@ class Sidebar extends StatelessWidget {
             ),
           ),
           ListTile(
+            leading: Icon(Icons.person),
+            title: Text('Profile'),
+            onTap: () => {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return Profile();
+              }))
+            },
+          ),
+          ListTile(
             leading: Icon(Icons.favorite),
             title: Text('Favorites'),
           ),
@@ -36,8 +48,26 @@ class Sidebar extends StatelessWidget {
           ),
           Divider(),
           ListTile(
+            leading: Icon(Icons.info_outlined),
+            title: Text('About'),
+            onTap: () => {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return About();
+              }))
+            },
+          ),
+          SizedBox(
+            height: 150,
+          ),
+          Divider(),
+          ListTile(
             title: Text('Exit'),
             leading: Icon(Icons.exit_to_app),
+            onTap: () => {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return LoginPage();
+              }))
+            },
           ),
         ],
       ),

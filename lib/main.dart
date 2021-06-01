@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:resepnenek/LoginPage.dart';
+// ignore: unused_import
 import 'HomePage.dart';
 
 void main() {
@@ -9,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      home: LoginPage(),
     );
   }
 }
